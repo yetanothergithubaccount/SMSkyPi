@@ -8,7 +8,8 @@ This is the minimal source code base to run a Raspberry Pi based Allsky camera w
 
 ### Software
 - Raspberry Pi OS, e.g. Bookworm
-- Python3
+- Python3, pip3
+```sudo apt install python3-pip```
 - ffmpeg
 ```sudo apt-get install ffmpeg```
 - suntime
