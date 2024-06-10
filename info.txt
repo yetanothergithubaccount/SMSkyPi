@@ -1,0 +1,14 @@
+TODO
+Minimal setup to run SkyPi on Raspberry Pi with HQ camera as an allsky camera
+
+python3
+
+config for shots in file
+get sunrise/sunset settings
+write crontab
+run nightshots script
+at the end of the night:
+collect results like
+- create timelapse video
+- create startrail
+- create keograms

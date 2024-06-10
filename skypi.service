@@ -1,0 +1,8 @@
+[Unit]
+Description=SkyPi Nightshots Service
+
+[Service]
+ExecStart=/home/pi/skypi/nightshotservice.sh
+
+[Install]
+WantedBy=multi-user.target
