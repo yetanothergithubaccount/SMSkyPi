@@ -1,5 +1,5 @@
 # SkyPi
-This is the minimal source code base to run a Raspberry Pi based Allsky camera.
+This is the minimal source code base to run a Raspberry Pi based Allsky camera within a WiFi network.
 
 ## Requirements
 ### Hardware
@@ -23,3 +23,7 @@ On the Pi run
 
 On another PC run VLC and open a network stream:
 ```tcp/h264://$ip_address:3333```
+
+## Run SkyPi
+If the crontab is configured properly the SkyPi software will be launched after reboot. The script skypi/check_night_or_day.py will configure the night run settings according to sunset and sunrise in skypi/skypi_config.py. Nightshots will be taken during the darkest night (sunset+1,5h / sunrise-1,5h). The images will be stored in /home/pi/timelapse_night_<year>-<month>-<day>. At the end of the night the script skypi/finish_night.py will create a timelapse video, a startrail and keograms in /home/pi/<year>-<month>-<day>.
+
