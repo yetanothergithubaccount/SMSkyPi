@@ -82,7 +82,7 @@ if __name__ == "__main__":
       print(state)
       print("SkyPi: Create and mail timelapse video of " + str(date_yesterday) + "..." )
 
-    results_dir = "/home/pi/" + str(theDate)
+    results_dir = "/home/pi/" + str(date_yesterday)
     if not os.path.exists(results_dir):
       os.makedirs(results_dir)
       if debug:
