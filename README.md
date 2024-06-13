@@ -1,5 +1,5 @@
 # SkyPi
-This is the minimal source code base to run a Raspberry Pi based Allsky camera within a WiFi network.
+This is the minimal source code base to run a Raspberry Pi based Allsky camera over night within a WiFi network.
 
 ## Requirements
 ### Hardware
