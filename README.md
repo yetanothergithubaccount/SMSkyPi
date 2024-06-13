@@ -16,6 +16,7 @@ This is the minimal source code base to run a Raspberry Pi based Allsky camera o
 ```sudo pip3 install suntime --break-system-packages```
 
 ## Installation
+Extract the content of this repository as it is to /home/pi/.
 Run the setup.sh script.
 
 ## Camera Adjustment
