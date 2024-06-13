@@ -24,7 +24,7 @@ On the Pi run
 ```rpicam-vid -t 0 -l -o tcp://0.0.0.0:3333```
 
 On another PC run VLC and open a network stream:
-```tcp/h264://$ip_address:3333```
+```tcp/h264://<ip_address>:3333```
 
 ### Run SkyPi
 If the crontab is configured properly the SkyPi software will be launched after reboot. The script skypi/check_night_or_day.py will configure the night run settings according to sunset and sunrise in skypi/skypi_config.py. The base file for the actual skypi settings is skypi_config_orig.py.
