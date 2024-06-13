@@ -1,4 +1,10 @@
 #!/bin/bash
+# -*- coding: utf-8 -*-
+#
+# start script to take night shots, run by nightshots.service
+#
+# Copyright (C) 2021++  Solveigh Matthies
+#
 
 while true
 do

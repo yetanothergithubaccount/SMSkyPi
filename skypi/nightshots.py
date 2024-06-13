@@ -3,6 +3,8 @@
 #
 # script to take night shots, run by nightshots.service
 #
+# Copyright (C) 2021++  Solveigh Matthies
+#
 
 import time, datetime
 from time import sleep
