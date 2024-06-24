@@ -35,5 +35,5 @@ At the end of the night the script skypi/finish_night.py will create a timelapse
 ## Debugging
 Debug output may be enabled per file.
 
-### Extensibility
+## Extensibility
 The straightforward implementation allows simple extensions. For example the results could be sent automatically to a (shared) network drive, a telegram bot, via email to someone, etc. .
