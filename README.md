@@ -1,5 +1,5 @@
 # SkyPi
-This is the minimal source code base to run a Raspberry Pi based Allsky camera over night within a WiFi network. Developments started in 2021, this is the updated minimal version.
+This is the minimal source code base to run a Raspberry Pi based Allsky camera fully automatical over night within a WiFi network. My first developments started in 2021, this is the updated minimal version.
 
 ## Requirements
 ### Hardware
@@ -8,8 +8,8 @@ This is the minimal source code base to run a Raspberry Pi based Allsky camera o
 - Fisheye lens for 360 degree vision
 
 ### Software
-- Raspberry Pi OS, e.g. Bookworm
-- Python3, pip3
+- Raspberry Pi OS, e.g. Bookworm (https://www.raspberrypi.com/software/operating-systems/)
+- python3, pip3
 ```sudo apt-get install python3-pip```
 - ffmpeg
 ```sudo apt-get install ffmpeg```
@@ -36,4 +36,4 @@ At the end of the night the script skypi/finish_night.py will create a timelapse
 Debug output may be enabled per file.
 
 ### Extensibility
-The straightforward implementation allows simple extensions. For example the results could be sent automatically to a network drive, a telegram bot, via email to someone, etc. .
+The straightforward implementation allows simple extensions. For example the results could be sent automatically to a (shared) network drive, a telegram bot, via email to someone, etc. .
