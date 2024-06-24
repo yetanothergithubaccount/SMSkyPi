@@ -1,4 +1,4 @@
-# SkyPi
+# SMSkyPi
 This is the minimal source code base to run a Raspberry Pi based Allsky camera fully automatical over night within a WiFi network. My first developments started in 2021, this is the updated minimal version.
 
 ## Requirements
