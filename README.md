@@ -28,10 +28,12 @@ On another PC run VLC and open a network stream:
 ```tcp/h264://<ip_address>:3333```
 
 ### Run SkyPi
-If the crontab is configured properly the SkyPi software will be launched after reboot. The script skypi/check_night_or_day.py will configure the night run settings according to sunset and sunrise in skypi/skypi_config.py. The base file for the actual skypi settings is skypi_config_orig.py.
-Nightshots will be taken during the darkest night (sunset+1,5h / sunrise-1,5h) using rpicam-still (successor of raspistill). The images will be stored in /home/pi/timelapse_night_yyyy-mm-dd/.
+If the crontab is configured properly the SkyPi software will be launched after reboot. The script skypi/check_night_or_day.py will configure the night run settings according to sunset and sunrise in skypi/skypi_config.py if an internet connection is available. The base file for the actual skypi settings is skypi_config_orig.py. If no internet connection is available the last stored settings will be used.
+Nightshots will be taken during the darkest night (approx. sunset+1,5h / sunrise-1,5h) using rpicam-still (successor of raspistill). The images will be stored in /home/pi/timelapse_night_yyyy-mm-dd/.
 At the end of the night the script skypi/finish_night.py will create a timelapse video, a startrail and keograms in /home/pi/yyyy-mm-dd.
 
 ## Debugging
 Debug output may be enabled per file.
 
+### Extensibility
+The straightforward implementation allows simple extensions. For example the results could be sent automatically to a network drive, a telegram bot, via email to someone, etc. .
