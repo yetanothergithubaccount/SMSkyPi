@@ -52,13 +52,13 @@ sudo make install
 
 To switch the relais for the heater ON use
 ```
-pigs modes 17 w
-pigs w 17 1
+pigs modes <PIN_NR> w
+pigs w <PIN_NR> 1
 ```
 To switch the relais for the heater OFF use
 ```
-pigs modes 17 w
-pigs w 17 0
+pigs modes <PIN_NR> w
+pigs w <PIN_NR> 0
 ```
 
 3) if the camera mount contains holes to allow airflow between the Raspberry Pi underneath the dome a simple while-true-loop will increase the CPU workload and therefore its temperature:
