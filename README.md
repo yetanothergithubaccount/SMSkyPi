@@ -78,7 +78,7 @@ python3 /home/pi/heat_loop.py
 
 To stop the heat loop run
 ```
-sudo kill $(pgrep -f 'python3 /home/pi/heatLoop.py')
+sudo kill $(pgrep -f 'python3 /home/pi/heat_loop.py')
 ```
 ## Debugging
 Debug output may be enabled per file.
