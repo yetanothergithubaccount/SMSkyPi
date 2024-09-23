@@ -38,7 +38,30 @@ Experience showed that temperatures below 10 degrees Celsius lead to dew on the 
 1) An AllSky-cam DIY heating solution is described here:
 https://github.com/hdiessner/Allskycam-heating
 
-2) if the camera mount contains holes to allow airflow between the Raspberry Pi underneath the dome a simple while-true-loop will increase the CPU workload and therefore its temperature:
+It seems that wiringpi is outdated, but pigs (https://abyz.me.uk/rpi/pigpio/) works for me.
+Installation
+```
+https://abyz.me.uk/rpi/pigpio/download.html
+git clone https://github.com/joan2937/pigpio
+wget https://github.com/joan2937/pigpio/archive/master.zip
+unzip master.zip
+cd pigpio-master
+make
+sudo make install
+```
+
+To switch the relais for the heater ON use
+```
+pigs modes 17 w
+pigs w 17 1
+```
+To switch the relais for the heater OFF use
+```
+pigs modes 17 w
+pigs w 17 0
+```
+
+3) if the camera mount contains holes to allow airflow between the Raspberry Pi underneath the dome a simple while-true-loop will increase the CPU workload and therefore its temperature:
 ```
 #file heat_loop.py
 #!/usr/bin/env python3
