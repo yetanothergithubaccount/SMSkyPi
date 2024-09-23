@@ -61,7 +61,8 @@ pigs modes <PIN_NR> w
 pigs w <PIN_NR> 0
 ```
 
-3) if the camera mount contains holes to allow airflow between the Raspberry Pi underneath the dome a simple while-true-loop will increase the CPU workload and therefore its temperature:
+
+2) If the camera mount plate contains holes to allow airflow between the Raspberry Pi underneath the dome a simple while-true-loop will increase the CPU workload and therefore its temperature:
 ```
 #file heat_loop.py
 #!/usr/bin/env python3
