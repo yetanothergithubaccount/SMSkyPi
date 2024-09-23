@@ -32,6 +32,30 @@ If the crontab is configured properly the SkyPi software will be launched after 
 Nightshots will be taken during the darkest night (approx. sunset+1,5h / sunrise-1,5h) using rpicam-still (successor of raspistill). The images will be stored in /home/pi/timelapse_night_yyyy-mm-dd/.
 At the end of the night the script skypi/finish_night.py will create a timelapse video, a startrail and keograms in /home/pi/yyyy-mm-dd.
 
+## Notes on Dome Heating
+Experience showed that temperatures below 10 degrees Celsius lead to dew on the dome. Several solutions exist to prevent this issue.
+
+1) An AllSky-cam DIY heating solution is described here:
+https://github.com/hdiessner/Allskycam-heating
+
+2) if the camera mount contains holes to allow airflow between the Raspberry Pi underneath the dome a simple while-true-loop will increase the CPU workload and therefore its temperature:
+```
+#file heat_loop.py
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+while True:
+  pass
+```
+
+To start the heat loop run
+```
+python3 /home/pi/heat_loop.py
+```
+
+To stop the heat loop run
+```
+sudo kill $(pgrep -f 'python3 /home/pi/heatLoop.py')
+```
 ## Debugging
 Debug output may be enabled per file.
 
